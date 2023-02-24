@@ -13,25 +13,21 @@
         <scene sceneID="QQR-U2-RNL">
             <objects>
                 <viewController id="5Cf-Hb-44e" customClass="MainViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="yFT-a9-eeS">
+                    <view key="view" contentMode="scaleToFill" id="yFT-a9-eeS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-gb-AAV">
-                                <rect key="frame" x="22" y="344" width="346" height="155"/>
+                                <rect key="frame" x="22" y="344" width="349" height="164"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="m1z-rc-rHb">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="155"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="101" height="164"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-sk-3sH">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="LRo-Bd-JMN"/>
-                                                    <constraint firstAttribute="height" constant="100" id="OTh-E9-QA4"/>
-                                                </constraints>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="109"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXw-IR-n4U">
-                                                <rect key="frame" x="0.0" y="125" width="100" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXw-IR-n4U">
+                                                <rect key="frame" x="0.0" y="134" width="101" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="ljn-nF-MBV"/>
                                                 </constraints>
@@ -42,13 +38,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8Vb-9Y-UfE">
-                                        <rect key="frame" x="123" y="0.0" width="100" height="155"/>
+                                        <rect key="frame" x="124" y="0.0" width="101" height="164"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L2j-8E-Dm3">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="109"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CH-07-pvW">
-                                                <rect key="frame" x="0.0" y="125" width="100" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8CH-07-pvW">
+                                                <rect key="frame" x="0.0" y="134" width="101" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="DJf-Gg-ILd"/>
                                                 </constraints>
@@ -59,13 +55,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="JQx-ra-ZGc">
-                                        <rect key="frame" x="246" y="0.0" width="100" height="155"/>
+                                        <rect key="frame" x="248" y="0.0" width="101" height="164"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oia-9m-bWv">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="109"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welldone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-O2-n7s">
-                                                <rect key="frame" x="0.0" y="125" width="100" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welldone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGm-O2-n7s">
+                                                <rect key="frame" x="0.0" y="134" width="101" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="N9M-bQ-ISy"/>
                                                 </constraints>

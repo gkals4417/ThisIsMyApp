@@ -13,11 +13,37 @@ class MainViewController: UIViewController {
     @IBOutlet weak var rareImageView: UIImageView!
     @IBOutlet weak var welldoneImageView: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         appearenceFunc()
-        // Do any additional setup after loading the view.
+        
+        rareImageView.isUserInteractionEnabled = true
+        rareImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(rareImageTapped)))
+        
+        mediumImageView.isUserInteractionEnabled = true
+        mediumImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(mediumImageTapped)))
+        
+        welldoneImageView.isUserInteractionEnabled = true
+        welldoneImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(welldoneImageTapped)))
+
+    }
+    
+    @objc func rareImageTapped(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            print(sender.hashValue)
+        }
+    }
+    
+    @objc func mediumImageTapped(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            print(sender.hashValue)
+        }
+    }
+    
+    @objc func welldoneImageTapped(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            print(sender.hashValue)
+        }
     }
     
     private func appearenceFunc() {
