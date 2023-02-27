@@ -30,19 +30,22 @@ class MainViewController: UIViewController {
     
     @objc func rareImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            print(sender.hashValue)
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "RareViewController") else {return}
+            present(vc, animated: true)
         }
     }
     
     @objc func mediumImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            print(sender.hashValue)
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "MediumViewController") else {return}
+            present(vc, animated: true)
         }
     }
     
     @objc func welldoneImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            print(sender.hashValue)
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "WelldoneViewController") else {return}
+            present(vc, animated: true)
         }
     }
     

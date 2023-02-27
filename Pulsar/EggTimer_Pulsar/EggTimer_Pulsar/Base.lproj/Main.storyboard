@@ -100,7 +100,7 @@
         <!--Rare View Controller-->
         <scene sceneID="rbY-FZ-MZb">
             <objects>
-                <viewController id="iLI-Dv-943" customClass="RareViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RareViewController" id="iLI-Dv-943" customClass="RareViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0k-AW-qVb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +115,7 @@
         <!--Medium View Controller-->
         <scene sceneID="Wkn-FC-pWf">
             <objects>
-                <viewController id="48L-jr-a09" customClass="MediumViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediumViewController" id="48L-jr-a09" customClass="MediumViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pTE-RP-9t8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@
         <!--Welldone View Controller-->
         <scene sceneID="LGf-lH-Ebf">
             <objects>
-                <viewController id="uKZ-M8-6Yd" customClass="WelldoneViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelldoneViewController" id="uKZ-M8-6Yd" customClass="WelldoneViewController" customModule="EggTimer_Pulsar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q0q-vH-Xe9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
