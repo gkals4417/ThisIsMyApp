@@ -11,6 +11,7 @@ class WelldoneViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("WelldoneVC is Loaded")
 
         // Do any additional setup after loading the view.
     }

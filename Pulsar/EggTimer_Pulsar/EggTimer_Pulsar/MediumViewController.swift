@@ -11,6 +11,7 @@ class MediumViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("MediumVC is Loaded")
 
         // Do any additional setup after loading the view.
     }
