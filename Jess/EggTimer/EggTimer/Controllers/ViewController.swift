@@ -20,15 +20,35 @@ class ViewController: UIViewController {
         return imageView
     }()
     
-    private let datePicker = UIDatePicker()
+    private let softButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("반숙", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
     
-//    private lazy var stackView: UIStackView = {
-//        let stackView = UIStackView(arrangedSubviews: [eggImageView, datePicker])
-//        stackView.axis = .vertical
-//        stackView.spacing = 20
-//        stackView.distribution = .fillEqually
-//        return stackView
-//    }()
+    private let mediumButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("적당", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
+    
+    private let hardButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("완숙", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        return button
+    }()
+
+    
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [softButton, mediumButton, hardButton])
+        stackView.axis = .horizontal
+        stackView.spacing = 50
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
     
 
     // MARK: - LifeCycle
@@ -51,13 +71,11 @@ class ViewController: UIViewController {
             make.right.equalToSuperview().offset(-20)
         }
         
-        view.addSubview(datePicker)
-        datePicker.snp.makeConstraints { make in
-            make.height.equalTo(50)
-            make.top.equalTo(eggImageView.snp.bottom).offset(20)
-            // View의 정중앙에 위치할 것
+        view.addSubview(stackView)
+        stackView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
+   
     }
 
 }
