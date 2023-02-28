@@ -9,9 +9,13 @@ import UIKit
 
 class RareViewController: UIViewController {
 
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("RareVC is Loaded")
+        mainLabel.text = "RareVC is Loaded"
         // Do any additional setup after loading the view.
     }
     

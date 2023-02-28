@@ -9,10 +9,11 @@ import UIKit
 
 class MediumViewController: UIViewController {
 
+    @IBOutlet weak var mainLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("MediumVC is Loaded")
-
+        mainLabel.text = "MediumVC is Loaded"
         // Do any additional setup after loading the view.
     }
     

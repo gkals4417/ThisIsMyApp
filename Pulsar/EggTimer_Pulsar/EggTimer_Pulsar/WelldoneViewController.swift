@@ -9,10 +9,12 @@ import UIKit
 
 class WelldoneViewController: UIViewController {
 
+    @IBOutlet weak var mainLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("WelldoneVC is Loaded")
-
+        mainLabel.text = "WelldoneVC is Loaded"
         // Do any additional setup after loading the view.
     }
     
