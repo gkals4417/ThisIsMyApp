@@ -11,6 +11,12 @@ class WelldoneViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
     
+    @IBOutlet weak var startButton: UIButton!
+    var timer: Timer?
+    var totalTime: Int = 720
+    var passedTime: Int = 0
+    var isPaused: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("WelldoneVC is Loaded")
@@ -18,15 +24,40 @@ class WelldoneViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        startTimer()
     }
-    */
+    
+    
+    
+    @objc func updateTimer(){
+        if passedTime < totalTime {
+            passedTime += 1
+            mainLabel.text = "\(passedTime)초"
+
+        } else {
+            timer?.invalidate()
+            passedTime = 0
+        }
+    }
+
+    func startTimer(){
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        print(passedTime)
+    }
+
+    func pauseTimer(){
+        if isPaused {
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            isPaused = false
+        } else {
+            timer?.invalidate()
+            isPaused = true
+        }
+    }
+
+    
 
 }

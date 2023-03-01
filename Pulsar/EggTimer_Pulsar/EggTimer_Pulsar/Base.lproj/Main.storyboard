@@ -105,22 +105,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuX-HA-1Jt">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PGl-k9-oME">
+                                <rect key="frame" x="159" y="388.66666666666669" width="75" height="74.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuX-HA-1Jt">
+                                        <rect key="frame" x="17.000000000000004" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YK-cY-9KD">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="75" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="iLI-Dv-943" eventType="touchUpInside" id="Jdr-Jw-4G2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QR9-t4-vcQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="yuX-HA-1Jt" firstAttribute="centerX" secondItem="U0k-AW-qVb" secondAttribute="centerX" id="Uf8-kk-NYs"/>
-                            <constraint firstItem="yuX-HA-1Jt" firstAttribute="centerY" secondItem="U0k-AW-qVb" secondAttribute="centerY" id="yoR-y6-PWC"/>
+                            <constraint firstItem="PGl-k9-oME" firstAttribute="centerY" secondItem="U0k-AW-qVb" secondAttribute="centerY" id="9XL-Ra-VYK"/>
+                            <constraint firstItem="PGl-k9-oME" firstAttribute="centerX" secondItem="U0k-AW-qVb" secondAttribute="centerX" id="t9c-jh-cz8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="yuX-HA-1Jt" id="pVd-GZ-cAn"/>
+                        <outlet property="startButton" destination="7YK-cY-9KD" id="cPN-jW-xsG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S33-oo-kig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -135,22 +149,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Li-LgY">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WOp-Pq-1Iv">
+                                <rect key="frame" x="159" y="388.66666666666669" width="75" height="74.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Li-LgY">
+                                        <rect key="frame" x="17.000000000000004" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI4-pK-8ub">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="75" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="48L-jr-a09" eventType="touchUpInside" id="wEo-Y8-JsS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fOZ-KD-slz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9bw-Li-LgY" firstAttribute="centerY" secondItem="pTE-RP-9t8" secondAttribute="centerY" id="PAu-dj-TPc"/>
-                            <constraint firstItem="9bw-Li-LgY" firstAttribute="centerX" secondItem="pTE-RP-9t8" secondAttribute="centerX" id="qwd-W9-Hhb"/>
+                            <constraint firstItem="WOp-Pq-1Iv" firstAttribute="centerX" secondItem="pTE-RP-9t8" secondAttribute="centerX" id="IOE-c1-avI"/>
+                            <constraint firstItem="WOp-Pq-1Iv" firstAttribute="centerY" secondItem="pTE-RP-9t8" secondAttribute="centerY" id="aVh-UC-e9v"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="9bw-Li-LgY" id="LoL-kh-i7E"/>
+                        <outlet property="startButton" destination="OI4-pK-8ub" id="Egh-UO-oFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFC-yX-v5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -165,22 +193,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gg-py-K4y">
-                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JRc-b0-KtK">
+                                <rect key="frame" x="159" y="388.66666666666669" width="75" height="74.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7gg-py-K4y">
+                                        <rect key="frame" x="17.000000000000004" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8M-fw-WEC">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="75" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="startButtonTapped:" destination="uKZ-M8-6Yd" eventType="touchUpInside" id="x1X-gh-jta"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l6x-pD-0b5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7gg-py-K4y" firstAttribute="centerX" secondItem="Q0q-vH-Xe9" secondAttribute="centerX" id="UV5-Ar-5TQ"/>
-                            <constraint firstItem="7gg-py-K4y" firstAttribute="centerY" secondItem="Q0q-vH-Xe9" secondAttribute="centerY" id="u95-PZ-paV"/>
+                            <constraint firstItem="JRc-b0-KtK" firstAttribute="centerY" secondItem="Q0q-vH-Xe9" secondAttribute="centerY" id="Fj8-sd-qc1"/>
+                            <constraint firstItem="JRc-b0-KtK" firstAttribute="centerX" secondItem="Q0q-vH-Xe9" secondAttribute="centerX" id="dWY-Gs-wCr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="7gg-py-K4y" id="BcD-Oj-6l6"/>
+                        <outlet property="startButton" destination="z8M-fw-WEC" id="HIS-Nh-2ND"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAh-zn-OKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

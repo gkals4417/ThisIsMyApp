@@ -13,7 +13,6 @@
 		4D6693E929A638E200DCADED /* EggTimer_Pulsar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D6693E729A638E200DCADED /* EggTimer_Pulsar.xcdatamodeld */; };
 		4D6693EB29A638E300DCADED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6693EA29A638E300DCADED /* Assets.xcassets */; };
 		4D6693EE29A638E300DCADED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D6693EC29A638E300DCADED /* LaunchScreen.storyboard */; };
-		4D66C63C29AE51C900CFFB06 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66C63B29AE51C900CFFB06 /* TimerManager.swift */; };
 		4DE822E029A7A50D009A641F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE822DF29A7A50D009A641F /* MainViewController.swift */; };
 		4DE822E229A7A629009A641F /* RareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE822E129A7A629009A641F /* RareViewController.swift */; };
 		4DE822E429A7A631009A641F /* MediumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE822E329A7A631009A641F /* MediumViewController.swift */; };
@@ -29,7 +28,6 @@
 		4D6693EA29A638E300DCADED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6693ED29A638E300DCADED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D6693EF29A638E300DCADED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D66C63B29AE51C900CFFB06 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		4DE822DF29A7A50D009A641F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4DE822E129A7A629009A641F /* RareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RareViewController.swift; sourceTree = "<group>"; };
 		4DE822E329A7A631009A641F /* MediumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				4D6693DE29A638E200DCADED /* AppDelegate.swift */,
 				4D6693E029A638E200DCADED /* SceneDelegate.swift */,
 				4D6693E429A638E200DCADED /* Main.storyboard */,
-				4D66C63B29AE51C900CFFB06 /* TimerManager.swift */,
 				4DE822DF29A7A50D009A641F /* MainViewController.swift */,
 				4DE822E129A7A629009A641F /* RareViewController.swift */,
 				4DE822E329A7A631009A641F /* MediumViewController.swift */,
@@ -154,7 +151,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DE822E229A7A629009A641F /* RareViewController.swift in Sources */,
-				4D66C63C29AE51C900CFFB06 /* TimerManager.swift in Sources */,
 				4D6693DF29A638E200DCADED /* AppDelegate.swift in Sources */,
 				4D6693E929A638E200DCADED /* EggTimer_Pulsar.xcdatamodeld in Sources */,
 				4D6693E129A638E200DCADED /* SceneDelegate.swift in Sources */,
