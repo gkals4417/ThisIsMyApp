@@ -50,9 +50,9 @@ class MainViewController: UIViewController {
     }
     
     private func appearenceFunc() {
-        rareImageView.image = UIImage(systemName: "person.fill")
-        mediumImageView.image = UIImage(systemName: "person.2")
-        welldoneImageView.image = UIImage(systemName: "person.3")
+        rareImageView.image = UIImage(named: "egg")
+        mediumImageView.image = UIImage(named: "egg")
+        welldoneImageView.image = UIImage(named: "egg")
     }
 
 }

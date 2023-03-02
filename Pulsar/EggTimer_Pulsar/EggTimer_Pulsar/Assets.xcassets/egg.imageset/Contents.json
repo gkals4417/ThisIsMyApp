@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "pngtree-cute-egg-kawaii-smile-png-image_5827133.png.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

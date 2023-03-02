@@ -10,40 +10,54 @@ import UIKit
 class RareViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
-    
     @IBOutlet weak var startButton: UIButton!
+
+    //원래는 390초
     var timer: Timer?
-    var totalTime: Int = 390
-    var passedTime: Int = 0
+    var totalTime: Int = 1
+    var passedTime: Int = 6
     var isPaused: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        appearence()
         print("RareVC is Loaded")
-        mainLabel.text = "RareVC is Loaded"
-        // Do any additional setup after loading the view.
+        mainLabel.text = "완전반숙"
     }
     
+    func appearence() {
+        startButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        startButton.setTitle("", for: .normal)
+        startButton.tintColor = .black
+        mainLabel.font = UIFont(name: "systemfont", size: 30)
+        mainLabel.textColor = .red
+    }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        startTimer()
+        if passedTime == 6 {
+            startTimer ()
+        } else {
+            pauseTimer()
+        }
     }
-    
     
     
     @objc func updateTimer(){
-        if passedTime < totalTime {
-            passedTime += 1
+        if passedTime > totalTime {
+            passedTime -= 1
             mainLabel.text = "\(passedTime)초"
         } else {
             timer?.invalidate()
-            passedTime = 0
+            mainLabel.text = "완료되었습니다."
+            startButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            passedTime = 6
         }
     }
 
     func startTimer(){
         timer?.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        startButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         print(passedTime)
     }
 
@@ -51,9 +65,11 @@ class RareViewController: UIViewController {
         if isPaused {
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
             isPaused = false
+            startButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         } else {
             timer?.invalidate()
             isPaused = true
+            startButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
         }
     }
     
