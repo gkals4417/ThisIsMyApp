@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     @IBOutlet weak var mediumImageView: UIImageView!
     @IBOutlet weak var rareImageView: UIImageView!
@@ -18,33 +18,48 @@ class MainViewController: UIViewController {
         appearenceFunc()
         
         rareImageView.isUserInteractionEnabled = true
-        rareImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(rareImageTapped)))
+        rareImageView.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(rareImageTapped)
+            )
+        )
         
         mediumImageView.isUserInteractionEnabled = true
-        mediumImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(mediumImageTapped)))
+        mediumImageView.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(mediumImageTapped)
+            )
+        )
         
         welldoneImageView.isUserInteractionEnabled = true
-        welldoneImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(welldoneImageTapped)))
+        welldoneImageView.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(welldoneImageTapped)
+            )
+        )
 
     }
     
-    @objc func rareImageTapped(_ sender: UITapGestureRecognizer) {
+    @objc private func rareImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            guard let vc = self.storyboard?.instantiateViewController(identifier: "RareViewController") else {return}
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "RareViewController") else { return }
             present(vc, animated: true)
         }
     }
     
-    @objc func mediumImageTapped(_ sender: UITapGestureRecognizer) {
+    @objc private func mediumImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            guard let vc = self.storyboard?.instantiateViewController(identifier: "MediumViewController") else {return}
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "MediumViewController") else { return }
             present(vc, animated: true)
         }
     }
     
-    @objc func welldoneImageTapped(_ sender: UITapGestureRecognizer) {
+    @objc private func welldoneImageTapped(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            guard let vc = self.storyboard?.instantiateViewController(identifier: "WelldoneViewController") else {return}
+            guard let vc = self.storyboard?.instantiateViewController(identifier: "WelldoneViewController") else { return }
             present(vc, animated: true)
         }
     }
