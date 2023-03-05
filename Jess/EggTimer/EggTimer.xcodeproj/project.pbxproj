@@ -7,28 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C859ADA229B467410064F325 /* SoftButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859ADA129B467410064F325 /* SoftButtonController.swift */; };
+		C859ADA429B468B90064F325 /* MediumButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859ADA329B468B90064F325 /* MediumButtonController.swift */; };
+		C859ADA629B468C50064F325 /* HardButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859ADA529B468C50064F325 /* HardButtonController.swift */; };
 		C89A012E29A63A60000E8A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A012D29A63A60000E8A75 /* AppDelegate.swift */; };
 		C89A013029A63A60000E8A75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A012F29A63A60000E8A75 /* SceneDelegate.swift */; };
-		C89A013229A63A60000E8A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A013129A63A60000E8A75 /* ViewController.swift */; };
+		C89A013229A63A60000E8A75 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89A013129A63A60000E8A75 /* MainViewController.swift */; };
 		C89A013529A63A60000E8A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89A013329A63A60000E8A75 /* Main.storyboard */; };
 		C89A013829A63A60000E8A75 /* EggTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C89A013629A63A60000E8A75 /* EggTimer.xcdatamodeld */; };
 		C89A013A29A63A61000E8A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89A013929A63A61000E8A75 /* Assets.xcassets */; };
 		C89A013D29A63A61000E8A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89A013B29A63A61000E8A75 /* LaunchScreen.storyboard */; };
 		C89BC2C929A73DFC0080B3B3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C89BC2C829A73DFC0080B3B3 /* SnapKit */; };
-		C8CE133029A8A32000A971F1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE132F29A8A32000A971F1 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C859ADA129B467410064F325 /* SoftButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftButtonController.swift; sourceTree = "<group>"; };
+		C859ADA329B468B90064F325 /* MediumButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumButtonController.swift; sourceTree = "<group>"; };
+		C859ADA529B468C50064F325 /* HardButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardButtonController.swift; sourceTree = "<group>"; };
 		C89A012A29A63A60000E8A75 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C89A012D29A63A60000E8A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C89A012F29A63A60000E8A75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C89A013129A63A60000E8A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C89A013129A63A60000E8A75 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C89A013429A63A60000E8A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C89A013729A63A60000E8A75 /* EggTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EggTimer.xcdatamodel; sourceTree = "<group>"; };
 		C89A013929A63A61000E8A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C89A013C29A63A61000E8A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C89A013E29A63A61000E8A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8CE132F29A8A32000A971F1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,6 @@
 			children = (
 				C89A012D29A63A60000E8A75 /* AppDelegate.swift */,
 				C89A012F29A63A60000E8A75 /* SceneDelegate.swift */,
-				C8CE133129A8A33000A971F1 /* View */,
 				C8CE133229A8A33E00A971F1 /* Controllers */,
 				C89A013329A63A60000E8A75 /* Main.storyboard */,
 				C89A013929A63A61000E8A75 /* Assets.xcassets */,
@@ -75,18 +78,13 @@
 			path = EggTimer;
 			sourceTree = "<group>";
 		};
-		C8CE133129A8A33000A971F1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C8CE132F29A8A32000A971F1 /* DetailView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C8CE133229A8A33E00A971F1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C89A013129A63A60000E8A75 /* ViewController.swift */,
+				C89A013129A63A60000E8A75 /* MainViewController.swift */,
+				C859ADA129B467410064F325 /* SoftButtonController.swift */,
+				C859ADA329B468B90064F325 /* MediumButtonController.swift */,
+				C859ADA529B468C50064F325 /* HardButtonController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,10 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C89A013229A63A60000E8A75 /* ViewController.swift in Sources */,
+				C89A013229A63A60000E8A75 /* MainViewController.swift in Sources */,
 				C89A013829A63A60000E8A75 /* EggTimer.xcdatamodeld in Sources */,
+				C859ADA229B467410064F325 /* SoftButtonController.swift in Sources */,
+				C859ADA629B468C50064F325 /* HardButtonController.swift in Sources */,
 				C89A012E29A63A60000E8A75 /* AppDelegate.swift in Sources */,
-				C8CE133029A8A32000A971F1 /* DetailView.swift in Sources */,
+				C859ADA429B468B90064F325 /* MediumButtonController.swift in Sources */,
 				C89A013029A63A60000E8A75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
