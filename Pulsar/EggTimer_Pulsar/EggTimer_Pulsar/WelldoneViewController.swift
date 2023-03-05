@@ -59,14 +59,26 @@ final class WelldoneViewController: UIViewController {
 
     private func startTimer(){
         timer?.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(
+            timeInterval: 1.0,
+            target: self,
+            selector: #selector(updateTimer),
+            userInfo: nil,
+            repeats: true
+        )
         startButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         print(passedTime)
     }
 
     private func pauseTimer(){
         if isPaused {
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(
+                timeInterval: 1.0,
+                target: self,
+                selector: #selector(updateTimer),
+                userInfo: nil,
+                repeats: true
+            )
             isPaused = false
             startButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         } else {

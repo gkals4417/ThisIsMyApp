@@ -68,6 +68,7 @@ final class MainViewController: UIViewController {
         rareImageView.image = UIImage(named: "egg")
         mediumImageView.image = UIImage(named: "egg")
         welldoneImageView.image = UIImage(named: "egg")
+        self.view.backgroundColor = .lightGray
     }
 
 }
