@@ -28,7 +28,7 @@ final class NetworkManager {
             return
         }
         getData(urlString: urlString) { result in
-            print(result)
+            completion(result)
         }
     }
     

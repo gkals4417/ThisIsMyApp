@@ -9,9 +9,11 @@ import UIKit
 
 final class MovieCell: UITableViewCell {
     
+    
     let mainImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.sizeToFit()
         return imageView
     }()
     
@@ -61,13 +63,13 @@ final class MovieCell: UITableViewCell {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            mainImageView.heightAnchor.constraint(equalToConstant: 30),
-            mainImageView.widthAnchor.constraint(equalToConstant: 30),
+            mainImageView.heightAnchor.constraint(equalToConstant: 50),
+            mainImageView.widthAnchor.constraint(equalToConstant: 50),
             mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             mainImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
-            titleLabel.heightAnchor.constraint(equalToConstant: 30),
-            descriptionLabel.heightAnchor.constraint(equalToConstant: 30),
+            titleLabel.heightAnchor.constraint(equalToConstant: 50),
+            descriptionLabel.heightAnchor.constraint(equalToConstant: 50),
             
             stackView.leadingAnchor.constraint(equalTo: mainImageView.trailingAnchor, constant: 15),
             stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
@@ -75,4 +77,6 @@ final class MovieCell: UITableViewCell {
             stackView.bottomAnchor.constraint(equalTo: self.mainImageView.bottomAnchor)
         ])
     }
+
+    
 }

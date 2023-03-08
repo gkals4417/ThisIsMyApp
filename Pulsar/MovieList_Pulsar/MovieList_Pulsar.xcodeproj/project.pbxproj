@@ -70,13 +70,45 @@
 				4D446A0C29B81A7E006596F0 /* LaunchScreen.storyboard */,
 				4D446A0F29B81A7E006596F0 /* Info.plist */,
 				4D446A0729B81A7D006596F0 /* MovieList_Pulsar.xcdatamodeld */,
-				4D446A1529B81B6E006596F0 /* NetworkManager.swift */,
-				4D446A1729B81B77006596F0 /* Constants.swift */,
-				4D446A1A29B82186006596F0 /* DataModel.swift */,
-				4D446A0229B81A7D006596F0 /* MainViewController.swift */,
-				4D446A1C29B83DE1006596F0 /* MovieCell.swift */,
+				4D446A2029B84246006596F0 /* Helpers */,
+				4D446A1F29B84237006596F0 /* Models */,
+				4D446A2129B8424F006596F0 /* Controllers */,
+				4D446A1E29B8422E006596F0 /* Views */,
 			);
 			path = MovieList_Pulsar;
+			sourceTree = "<group>";
+		};
+		4D446A1E29B8422E006596F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D446A1C29B83DE1006596F0 /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D446A1F29B84237006596F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D446A1A29B82186006596F0 /* DataModel.swift */,
+				4D446A1529B81B6E006596F0 /* NetworkManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D446A2029B84246006596F0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4D446A1729B81B77006596F0 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4D446A2129B8424F006596F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D446A0229B81A7D006596F0 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
