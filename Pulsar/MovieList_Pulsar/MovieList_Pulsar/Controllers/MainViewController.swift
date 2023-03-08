@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     let networkManager = NetworkManager.shared
     let tableView = UITableView()
@@ -91,22 +91,23 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
-        
         cell.mainImageView.image = UIImage(systemName: "person")
         cell.titleLabel.text = String(htmlEncodedString: movieArrayFromAPI[indexPath.row].title)
-        cell.descriptionLabel.text = movieArrayFromAPI[indexPath.row].subtitle
-
+        //cell.descriptionLabel.text = movieArrayFromAPI[indexPath.row].subtitle
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = SelectedViewController()
+        nextVC.modalPresentationStyle = .automatic
+        nextVC.movieDataFromMainVC = movieArrayFromAPI[indexPath.row]
+        present(nextVC, animated: true)
     }
 }
 
 extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let searchWord = searchController.searchBar.text else { return }
-        getAPIData(searchWord: searchWord) {
-
-        }
+        getAPIData(searchWord: searchWord) { }
     }
-    
-    
 }

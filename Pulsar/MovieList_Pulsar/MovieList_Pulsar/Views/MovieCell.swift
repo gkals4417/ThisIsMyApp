@@ -8,8 +8,6 @@
 import UIKit
 
 final class MovieCell: UITableViewCell {
-    
-    
     let mainImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,20 +21,20 @@ final class MovieCell: UITableViewCell {
         return label
     }()
     
-    let descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+//    let descriptionLabel: UILabel = {
+//        let label = UILabel()
+//        label.translatesAutoresizingMaskIntoConstraints = false
+//        return label
+//    }()
     
     let stackView: UIStackView = {
-        let sv = UIStackView()
-        sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.axis = .horizontal
-        sv.distribution = .fillEqually
-        sv.alignment = .center
-        sv.spacing = 10
-        return sv
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        stackView.alignment = .center
+        stackView.spacing = 10
+        return stackView
     }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -53,7 +51,7 @@ final class MovieCell: UITableViewCell {
         addSubview(stackView)
         
         stackView.addArrangedSubview(titleLabel)
-        stackView.addArrangedSubview(descriptionLabel)
+//        stackView.addArrangedSubview(descriptionLabel)
     }
     
     override func updateConstraints() {
@@ -69,7 +67,7 @@ final class MovieCell: UITableViewCell {
             mainImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
             titleLabel.heightAnchor.constraint(equalToConstant: 50),
-            descriptionLabel.heightAnchor.constraint(equalToConstant: 50),
+//            descriptionLabel.heightAnchor.constraint(equalToConstant: 50),
             
             stackView.leadingAnchor.constraint(equalTo: mainImageView.trailingAnchor, constant: 15),
             stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
