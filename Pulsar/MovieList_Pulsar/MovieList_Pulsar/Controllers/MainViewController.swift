@@ -93,6 +93,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
         cell.mainImageView.image = UIImage(systemName: "person")
         cell.titleLabel.text = String(htmlEncodedString: movieArrayFromAPI[indexPath.row].title)
+        
+        let imageString = movieArrayFromAPI[indexPath.row].image
+        DispatchQueue.global().async {
+            if let imageURL = URL(string: imageString) {
+                let image = try! Data(contentsOf: imageURL)
+                DispatchQueue.main.async {
+                    cell.mainImageView.image = UIImage(data: image)
+                }
+                
+            }
+        }
+        
+        
         //cell.descriptionLabel.text = movieArrayFromAPI[indexPath.row].subtitle
         return cell
     }

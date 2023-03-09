@@ -23,9 +23,19 @@ final class SelectedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedView.selectedImageView.image = UIImage(systemName: "person")
+        
+        guard let imageString = movieDataFromMainVC?.image else {return}
+        DispatchQueue.global().async {
+            if let imageURL = URL(string: imageString) {
+                let image = try! Data(contentsOf: imageURL)
+                DispatchQueue.main.async {
+                    self.selectedView.selectedImageView.image = UIImage(data: image)
+                }
+                
+            }
+        }
         selectedView.selectedTitleLable.text = String(htmlEncodedString: movieDataFromMainVC?.title ?? "")
-//        selectedView.selectedDescriptionLabel.text = String(htmlEncodedString: movieDataFromMainVC?.subtitle ?? "")
+        selectedView.selectedDescriptionLabel.text = String(htmlEncodedString: movieDataFromMainVC?.subtitle ?? "")
         
        
     }
