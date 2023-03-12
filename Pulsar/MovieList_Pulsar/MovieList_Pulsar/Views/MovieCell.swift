@@ -69,10 +69,12 @@ final class MovieCell: UITableViewCell {
             titleLabel.heightAnchor.constraint(equalToConstant: 50),
 //            descriptionLabel.heightAnchor.constraint(equalToConstant: 50),
             
-            stackView.leadingAnchor.constraint(equalTo: mainImageView.trailingAnchor, constant: 15),
-            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            stackView.topAnchor.constraint(equalTo: self.mainImageView.topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: self.mainImageView.bottomAnchor)
+//            stackView.leadingAnchor.constraint(equalTo: mainImageView.trailingAnchor, constant: 15),
+//            stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+//            stackView.topAnchor.constraint(equalTo: self.mainImageView.topAnchor),
+//            stackView.bottomAnchor.constraint(equalTo: self.mainImageView.bottomAnchor)
+            stackView.centerXAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: self.safeAreaLayoutGuide.centerYAnchor)
         ])
     }
 

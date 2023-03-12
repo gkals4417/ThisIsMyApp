@@ -77,10 +77,8 @@ final class SelectedView: UIView {
             
             selectedTitleLable.heightAnchor.constraint(equalToConstant: 20),
             selectedTitleLable.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            selectedTitleLable.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             selectedDescriptionLabel.heightAnchor.constraint(equalToConstant: 200),
             selectedDescriptionLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            selectedDescriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             
             stackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 0),
             stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
