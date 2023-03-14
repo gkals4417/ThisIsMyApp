@@ -1,0 +1,6 @@
+framework module Pods_MovieList_MVVM_Pulsar {
+  umbrella header "Pods-MovieList_MVVM_Pulsar-umbrella.h"
+
+  export *
+  module * { export * }
+}
